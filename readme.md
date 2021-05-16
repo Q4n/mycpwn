@@ -20,6 +20,9 @@ hexdump("title", buffer, length);
 ### r0
 
 ```
+add to makefile
+EXTRA_CFLAGS := -I/usr/local/include
+
 #include <q4n/kq4n.h>
 ```
 
