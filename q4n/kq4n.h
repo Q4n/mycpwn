@@ -40,7 +40,7 @@
 
 #define log(fmt, ...)                                                   \
     do {                                                                       \
-        pr_alert("%s:%d(): " fmt, __func__, __LINE__, ##__VA_ARGS__);   \
+        pr_alert("%s:%d:%s(): " fmt, __FILE__, __LINE__, __func__,  ##__VA_ARGS__);   \
     } while (0)
 
 

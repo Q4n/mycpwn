@@ -17,12 +17,12 @@
 
 #define log(fmt, ...)                                                   \
     do {                                                                       \
-        fprintf(stderr, "%s:%d(): " fmt, __func__, __LINE__, ##__VA_ARGS__);   \
+        fprintf(stderr, "%s:%d:%s(): " fmt,__FILE__, __LINE__, __func__, ##__VA_ARGS__);   \
     } while (0)
 
 #define pause() \
     do{ \
-        fprintf(stderr, "%s:%d(): pause", __func__, __LINE__); \
+        fprintf(stderr, "%s:%d:%s(): pause", __FILE__, __LINE__, __func__); \
         getchar(); \
     }while(0)
 
